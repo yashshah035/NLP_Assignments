@@ -1,5 +1,3 @@
-import nltk
-from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.tokenize import WordPunctTokenizer
 from nltk.tokenize import TreebankWordTokenizer
 from nltk.tokenize import TweetTokenizer
