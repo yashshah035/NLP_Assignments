@@ -7,7 +7,7 @@ from nltk.stem import SnowballStemmer
 from nltk.stem import WordNetLemmatizer
 
 text = '''Tokenization is a crucial step in natural language processing. Different tokenization methods include whitespace, punctuation-based, Treebank, Tweet, and MWE.
-        NLTK library provides useful tools for text processing tasks. Stemming reduces words to their base form, e.g., running becomes run. Porter stemmer and snowball stemmer are popular stemming algorithms.,
+        NLTK library provides useful tools for text processing tasks. Stemming reduces words to it's base form, e.g., running becomes run. Porter stemmer and snowball stemmer are popular stemming algorithms.,
        Lemmatization, on the other hand, considers the context and meaning of words. #NLProc is an awesome #NLP conference!, Looking forward to #ACL2023 this summer!,
        @JohnDoe will present on # Transformers!'''
 
@@ -32,7 +32,7 @@ print(tokenizer.tokenize(text))
 
 # Multi-word expression tokenization
 print("\nMWE tokenizer:")
-tokenizer = MWETokenizer([('sample', 'sentence')])
+tokenizer = MWETokenizer()
 print(tokenizer.tokenize(text))
 
 # Stemming 
