@@ -1,4 +1,5 @@
 from nltk.tokenize import WordPunctTokenizer
+from nltk.tokenize import WhitespaceTokenizer
 from nltk.tokenize import TreebankWordTokenizer
 from nltk.tokenize import TweetTokenizer
 from nltk.tokenize import MWETokenizer
@@ -13,7 +14,8 @@ text = '''Tokenization is a crucial step in natural language processing. Differe
 
 # Whitespace tokenization
 print("\nWhitespace tokenizer:")
-print(text.split())
+tokenizer = WhitespaceTokenizer()
+print(tokenizer.tokenize(text))
  
 # Punctuation tokenization
 print("\nPunctuation tokenizer:") 
