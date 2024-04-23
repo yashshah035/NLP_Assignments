@@ -40,8 +40,7 @@ print(tokenizer.tokenize(text))
 # Stemming 
 porter_stemmer = PorterStemmer()
 snowball_stemmer = SnowballStemmer('english')
-words = ["writing", "writes", "written", "wrote", "happiness"]
-print("\nPorter stemming:")
+words = ["writing", "writes", "generously" ,"movies", "filmy","lengthy",'honestly']
 for word in words:
     print(word + ":" + porter_stemmer.stem(word))
 print("\nSnowball stemming:")  
