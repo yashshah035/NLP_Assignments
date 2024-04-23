@@ -3,9 +3,9 @@ from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize
 
 # Sample data
-corpus = ["The cat is jumping over the fence.",
-          "She loves eating apples in the evening.",
-          "I can't believe it's already Friday!"]
+corpus = ["The cat is jumping over the fence",
+          "She loves eating apples in the evening",
+          "I can not believe its already Friday!"]
 
 # Bag-of-Words (Count Occurrence)
 vectorizer_count = CountVectorizer()
@@ -22,7 +22,7 @@ tfidf_matrix = X_tfidf.toarray()
 
 # Word2Vec
 tokenized_sentences = [word_tokenize(sentence.lower()) for sentence in corpus]
-word2vec_model = Word2Vec(sentences=tokenized_sentences, vector_size=100, window=5, min_count=1, workers=4)
+word2vec_model = Word2Vec(sentences=tokenized_sentences, vector_size=5, window=5, min_count=1)
 word_embeddings = {word: word2vec_model.wv[word] for word in word2vec_model.wv.index_to_key}
 
 # Print results
