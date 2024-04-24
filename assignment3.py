@@ -33,7 +33,7 @@ print("\nText after removing stop words:")
 print(filtered_text)
 
 # Label encoding
-labels = word_tokenize(input_text)
+labels = word_tokenize(filtered_text)
 encoder = LabelEncoder()
 encoder.fit(labels) 
 encoded_value = encoder.transform(labels)
