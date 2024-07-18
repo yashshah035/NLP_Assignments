@@ -1,6 +1,6 @@
 # Reinforcement Learning Assignments
 
-This repository contains various assignments focused on different aspects of Natural Language Processing (NLP). Each assignment includes a Python program that demonstrates a specific NLP concept or algorithm.
+This repository contains various assignments focused on different aspects of Natural Language Processing (NLP). Each assignment includes a Python program that demonstrates a specific NLP concept or algorithm. Sample input dataset is given within the each code file.
 
 ## Assignments Overview
 
